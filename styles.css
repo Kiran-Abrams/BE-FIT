@@ -1,0 +1,233 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+*{
+    padding: 0px;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   background-color: rgb(85, 105, 105);
+
+}
+
+.container{
+    width: 100%;
+    height:100vh;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.4)0%,rgba(0,0,0,0.8)100%),
+    url("images1/m4.jpg")center/cover;
+    display:flex;
+    align-items: center;
+    margin-bottom: 50px;
+   
+}
+.login-page{
+    position: relative;
+    margin-top: 170px;
+    margin-left:420px;
+    margin-bottom: 70px;
+    width:50%;
+    height:67%;
+    background-color:transparent;
+    color: #fff;
+    cursor:pointer;
+    border-radius: 20px;
+    margin-bottom:35px ;
+    transition:all 0.3s;
+    box-shadow: 0.4s ease;
+    background-color: 0.4s ease;
+}
+.login-page:hover{
+transform: scale(1.02);
+box-shadow: 0 0 25px rgba(0,255,255,0.6);
+background-size:180% 180% ;
+}
+ .welcome{
+    font-family: 'Courier New', Courier, monospace;
+    padding:0px 240px 80px;
+ }
+ h1{
+    font-size:46px;
+}
+ p{
+   font-size:20px;
+   margin-top:15px ;
+ }
+ .user-name{
+   margin-left:70px;
+   font-size:27px;
+}
+.user-name input[type="text"]{
+   font-size:22px ;
+   border-radius:10px;
+   border-color: #fff;
+   background-color:transparent;
+   border-width: 4px;
+   
+}
+.user-name ::placeholder{
+  color: #878787;
+  padding: 0px 8px;
+}
+.user-name i{
+   width: 10px;
+   height: 10px;
+}
+
+ .password{
+   margin-top: 20px;
+   margin-left:70px;
+   font-size:27px;
+ }
+ .password input[type="password"]{
+   font-size: 22px;
+   border-radius:10px ;
+   border-color: #fff ;
+   border-width:4px ;
+   margin-left:6px ;
+   background-color:transparent;
+  
+ }
+ .password ::placeholder{
+  color: #878383;
+  padding: 0px 8px;
+ }
+ .password i{
+   width:7px;
+   height: 7px;
+ }
+ .btn{
+   width:70px;
+   height:40px;
+   cursor: pointer;
+   border-radius: 5px;
+   border-color: azure;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .login-button{
+   display: flex;
+   gap: 19px;
+   margin-top: 20px;
+   margin-left:70px;
+   font-size:25px;
+   transition:0.3s ease ;
+ }
+ .btn:hover{
+   background-color: rgba(97, 134, 134, 0.75); 
+
+ }
+ .social-links{
+   padding: 0px 30px;
+   display: flex;
+   margin-top:40px;
+   margin-left:40px ;
+   align-items: center;
+   gap: 70px;
+   font-size: 30px;
+ }
+ .social-links a{
+   color: #fff;
+   transition:0.4s ease-in-out ;
+ }
+ .social-links a:hover{
+   color:#0000;
+ }
+/* Medium screens - tablets, small laptops */
+@media (max-width: 1200px) {
+  .login-page {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .welcome {
+    padding: 0 5rem 3rem;
+    text-align: center;
+  }
+
+  .user-name,
+  .password,
+  .login-button {
+    margin-left: 2rem;
+  }
+
+  .social-links {
+    gap: 2.5rem;
+  }
+}
+
+/* Small screens - tablets & large phones */
+@media (max-width: 768px) {
+  .login-page {
+    width: 90%;
+    padding: 1.5rem;
+    margin: 4rem auto;
+    box-sizing: border-box;
+  }
+
+  .welcome {
+    padding: 0 2rem 2rem;
+    text-align: center;
+  }
+
+  .user-name,
+  .password,
+  .login-button {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .user-name input[type="text"],
+  .password input[type="password"] {
+    width: 90%;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .login-button {
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: flex-start;
+    
+  }
+
+  .social-links {
+    flex-direction:row;
+    gap: 1.25rem;
+    margin-left: 0;
+    align-items: center;
+  }
+}
+
+/* Extra small screens - phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .welcome p {
+    font-size: 1rem;
+  }
+
+  .user-name,
+  .password {
+    font-size: 1.1rem;
+  }
+
+  .user-name input[type="text"],
+  .password input[type="password"] {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .social-links {
+    font-size: 1.5rem;
+  }
+}
+
