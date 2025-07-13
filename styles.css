@@ -208,9 +208,12 @@ background-size:180% 180% ;
     font-size: 1rem;
   }
 
-  .user-name,
+  .user-name{
+      font-size:1.1rem;
+  }
   .password {
     font-size: 1.1rem;
+    margin-left:-3px;
   }
 
   .user-name input[type="text"],
