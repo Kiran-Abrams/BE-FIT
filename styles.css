@@ -220,11 +220,12 @@ background-size:180% 180% ;
   .user-name input[type="text"]{
      font-size: 0.95rem;
     padding: 0.6rem; 
+      width:30px;
   }
   .password input[type="password"] {
     font-size: 0.95rem;
     padding: 0.6rem;
-      width:-3px;
+     
   }
 
   .btn {
