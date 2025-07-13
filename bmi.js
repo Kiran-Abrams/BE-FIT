@@ -32,6 +32,18 @@ weight=document.querySelector(".weight").value;
       document.querySelector(".BMI-2").innerHTML= "you are overweight";
   }
 }
+document.querySelector(".subc-btn").addEventListener("click",function(){
+  if(this.textContent==="SUBSCRIBE"){
+  this.textContent="SUBSCRIBED";
+  this.style.background="white";
+  this.style.color="black";
+}
+else{
+  document.querySelector(".subc-btn").textContent="SUBSCRIBE";
+  this.style.background="linear-gradient(to left,#2A7B9B,#57C785,#EDDD53)";
+}
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".slide");
 
