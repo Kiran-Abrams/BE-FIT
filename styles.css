@@ -208,24 +208,17 @@ background-size:180% 180% ;
     font-size: 1rem;
   }
 
-  .user-name{
-      font-size:1.1rem;
-  }
+  .user-name,
   .password {
     font-size: 1.1rem;
-    margin-left:-3px;
   }
 
-  .user-name input[type="text"]{
-     font-size: 0.95rem;
-    padding: 0.6rem;
-      width:30%;
-  }
+  .user-name input[type="text"],
   .password input[type="password"] {
     font-size: 0.95rem;
     padding: 0.6rem;
-     
   }
+  
 
   .btn {
     width: 100%;
@@ -237,4 +230,3 @@ background-size:180% 180% ;
     font-size: 1.5rem;
   }
 }
-
